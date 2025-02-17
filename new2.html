@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvel Electricity</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Custom Styles */
+        .hero {
+            background-image: url('https://via.placeholder.com/1200x600'); /* Replace with your image */
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        .cta-button {
+            background-color: #ff8c00;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .cta-button:hover {
+            background-color: #ff6700;
+        }
+        .service-card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .quote-section {
+            background-color: #ff8c00;
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar Section -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Harvel Electricity</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Reliable, Safe, and Sustainable Energy Solutions</h1>
+    <p>Empowering homes and businesses with cutting-edge electricity services.</p>
+    <a href="#quote" class="cta-button">Get Started</a>
+</section>
+
+<!-- About Us Section -->
+<section class="container py-5">
+    <h2 class="text-center mb-4">About Harvel Electricity</h2>
+    <p class="text-center">Harvel Electricity is a trusted name in providing innovative and efficient electricity solutions to homes and businesses. With years of experience in the industry, we are dedicated to bringing reliable and affordable power to your doorsteps, ensuring that your energy needs are always met.</p>
+</section>
+
+<!-- Services Section -->
+<section class="container py-5">
+    <h2 class="text-center mb-4">Our Services</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Residential Services">
+                <div class="card-body">
+                    <h5 class="card-title">Residential Services</h5>
+                    <p class="card-text">Keep your home powered with top-tier electrical services, from installation to repairs.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Commercial Services">
+                <div class="card-body">
+                    <h5 class="card-title">Commercial Services</h5>
+                    <p class="card-text">Tailored solutions for businesses, ensuring minimal downtime and optimal energy efficiency.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Renewable Energy">
+                <div class="card-body">
+                    <h5 class="card-title">Renewable Energy</h5>
+                    <p class="card-text">Sustainable energy for a brighter tomorrow. Solar panels, wind energy, and more.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="bg-dark text-white py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">What Our Clients Say</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <p>"Harvel Electricity made our home more energy-efficient. They were quick, professional, and affordable!" – Sarah T.</p>
+            </div>
+            <div class="col-md-6 mb-4">
+                <p>"The team provided excellent service, and I now feel confident that our business is powered by a reliable energy provider." – David R.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quote Section -->
+<section id="quote" class="quote-section">
+    <h2>Get Your Free Quote Today!</h2>
+    <p>Fill out the form below, and one of our experts will get back to you shortly with a customized quote.</p>
+    <form id="quoteForm" action="#" method="POST">
+        <div class="mb-3">
+            <input type="text" class="form-control" id="name" placeholder="Name" required>
+        </div>
+        <div class="mb-3">
+            <input type="email" class="form-control" id="email" placeholder="Email" required>
+        </div>
+        <div class="mb-3">
+            <input type="tel" class="form-control" id="phone" placeholder="Phone" required>
+        </div>
+        <div class="mb-3">
+            <textarea class="form-control" id="message" placeholder="Service Details" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-light">Request Quote</button>
+    </form>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-dark text-white py-4 text-center">
+    <p>&copy; 2025 Harvel Electricity. All rights reserved.</p>
+    <a href="#" class="text-white mx-2">Privacy Policy</a>|<a href="#" class="text-white mx-2">Terms of Service</a>
+</footer>
+
+<!-- Bootstrap 5 and JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Form Validation and Basic JavaScript -->
+<script>
+    document.getElementById('quoteForm').addEventListener('submit', function(event) {
+        // Simple form validation
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const message = document.getElementById('message').value;
+
+        if (!name || !email || !phone || !message) {
+            alert('Please fill out all fields.');
+            event.preventDefault(); // Prevent form submission
+        } else {
+            alert('Thank you for requesting a quote! We will get back to you soon.');
+        }
+    });
+</script>
+
+</body>
+</html>
